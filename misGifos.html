@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlNocturno">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./fav.css"> -->
+
+</head>
+<body class="">
+    <header>
+        <a href="./index.html" class="logoGifos">
+            <img src="/img/logo-desktop.svg" alt="logo" class="gifoNormal"/>
+            <img src="./img/logo-desktop-modo-noc.svg" alt="" class="GifoNoc">
+        </a>
+        <nav>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox">
+                <!-- <div class="ico"> -->
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                <!-- </div> -->
+            </label>
+            <ul>
+                <li><a href="#" id="ligth">
+                    Modo Nocturno
+                    </a>
+                </li>
+                <li class="guion"></li>
+                <li><a href="./favorito.html">Favoritos</a></li>
+                <li class="guion"></li>
+                <li><a href="./misGifos.html" class="fav">Mis GIFOS</a></li>
+                <li><a href="./crearGifo.html" class="circle"></a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <img src="./img/icon-mis-gifos.svg" alt="" class="corazonVerde">
+                    <h1 class="tituloPag">Mis GIFOS</h1>
+                </div>
+                <img src="./img/icon-mis-gifos-sin-contenido.svg" alt="" class="logoPag sinGifo">
+                <p class="parrafoPag sinGifo">¡Anímate a crear tu primer GIFO!</p>
+            </article>
+            <article id="resSearch">
+                <!-- <p class="title">Trending:</p>
+                <p class="parrafo">Reactions, Entertainment, Sports, Stickers, Artists</p> -->
+                <div id="gifAconcultar">
+                    
+                </div>
+                <img src="./img/icon-busqueda-sin-resultado.SVG" alt="" id="imgError">
+                <!-- <div class="fotoNueva" id="01"> -->
+                    <div class="fotoRow fotoRow0" id="02">
+                    
+                </div>
+                <button type="submit" class="verMas">Ver mas</button>
+            </article>
+            <article class="img">
+                <div>
+                    <p class="title">Trending GIFOS</p>
+                    <p class="parraf">Mira los últimos <span> <br></span>
+                        GIFOS de nuestra comunidad.</p>
+                </div>
+                <div class="center" id="container">
+                    <button class="botonesCarrusel retroceder"><i class="fas fa-less-than"></i></button>
+                    <div class="imagen" id="imagen">
+                        <ul class="hoverMouse">
+                            <li class="corazonLi"><img src="./img/icon-fav-hover.svg" alt="" class="corazon"></li>
+                            <li class="descargar"><img src="./img/icon-download.svg" alt="" class="descargar"></li>
+                            <li class="max"><img src="./img/icon-max.svg" alt="" class="max"></li>
+                        </ul>
+                        <ul class="info">
+                            <li id="user" class="user"></li>
+                            <li id="titulo" class="titulo"></li>
+                        </ul>
+                    </div>
+                    <div class="imagen" id="imagen1">
+                        <ul class="hoverMouse">
+                            <li class="corazonLi"><img src="./img/icon-fav-hover.svg" alt="" class="corazon"></li>
+                            <li class="descargar"><img src="./img/icon-download.svg" alt="" class="descargar"></li>
+                            <li class="max"><img src="./img/icon-max.svg" alt="" class="max"></li>
+                        </ul>
+                        <ul class="info">
+                            <li id="user1" class="user"></li>
+                            <li id="titulo1" class="titulo"></li>
+                        </ul>
+                    </div>
+                    <div class="imagen" id="imagen2">
+                        <ul class="hoverMouse">
+                            <li class="corazonLi"><img src="./img/icon-fav-hover.svg" alt="" class="corazon"></li>
+                            <li class="descargar"><img src="./img/icon-download.svg" alt="" class="descargar"></li>
+                            <li class="max"><img src="./img/icon-max.svg" alt="" class="max"></li>
+                        </ul>
+                        <ul class="info">
+                            <li id="user2" class="user"></li>
+                            <li id="titulo2" class="titulo"></li>
+                        </ul>
+                    </div>
+                    <button class="botonesCarrusel avanzar">></button>
+                </div>
+                <div id="containerModal" class="modal">    
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        
+                      <span class="close">&times;</span>
+                      
+                        <div class="imagenMax">
+                            <div>
+                                <button class="botonesCarrusel retroceder"><i class="fas fa-less-than"></i></button> 
+                                <div id="imgMax"></div>
+                                <button class="botonesCarrusel avanzar">></button>
+                            </div>
+                            <div class="opcionesMax">
+                                <ul class="infoMax">
+                                    <li id="userMax" class="user"></li>
+                                    <li id="tituloMax" class="titulo"></li>
+                                </ul> 
+                                <ul class="opciones">
+                                    <li class="corazonLi"><img src="./img/icon-fav-hover.svg" alt="" class="corazon"></li>
+                                    <li class="descargar"><img src="./img/icon-download.svg" alt="" class="descargar"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>   
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+        <p>Compartir en:</p>
+            <div class="icoRedes">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter color"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <p>© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    <script src="./js/misGifos.js"></script>
+    <script src="https://kit.fontawesome.com/1325c63674.js" crossorigin="anonymous"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/modoNocturno.js"></script>
+</body>
+</html>
